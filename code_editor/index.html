@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Better Live Code Editor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🛠️ Live Code Playground</h1>
+
+  <div class="buttons">
+    <button onclick="switchTab('html')">HTML</button>
+    <button onclick="switchTab('css')">CSS</button>
+    <button onclick="switchTab('js')">JS</button>
+  </div>
+
+  <div class="editors">
+    <textarea id="html" placeholder="<!-- Write HTML here -->"></textarea>
+    <textarea id="css" placeholder="/* Write CSS here */" style="display:none"></textarea>
+    <textarea id="js" placeholder="// Write JavaScript here" style="display:none"></textarea>
+  </div>
+
+  <h2>🔍 Live Preview</h2>
+  <iframe id="output"></iframe>
+
+  <script src="script.js"></script>
+</body>
+</html>
